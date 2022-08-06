@@ -255,6 +255,51 @@ strong {
   color: #262626;
 }
 
+.texto-cinza-claro {
+  color: #8e8e8e;
+}
+
+.comentarios input {
+  width: 100%;
+}
+.comentarios div {
+  margin-top: 10px;
+}
+.comentario {
+  display: flex;
+  justify-content: space-between;
+}
+.comentario p {
+  color: #262626;
+  text-align: justify;
+  margin-right: 5px;
+}
+.comentario .like {
+  width: 30px;
+}
+.comentar {
+  display: flex;
+  border-top: 1px solid #DBDBDB;
+}
+.comentar input {
+  height: 50px;
+  border: none;
+  padding: 10px 0;
+  outline: 0;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+.comentar p {
+  color: #B2DFFC;
+  font-weight: 500;
+  line-height: 50px;
+  cursor: pointer;
+}
+.comentar p:hover {
+  color: #0095F6;
+  transition: 300ms;
+}
+
 .usuario {
   display: flex;
 }
