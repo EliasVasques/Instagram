@@ -49,6 +49,7 @@ strong {
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .traco {
   background-color: #dbdbdb;
@@ -69,6 +70,7 @@ strong {
   width: 22px;
   height: 22px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .busca input {
@@ -100,8 +102,6 @@ strong {
   width: 614px;
 }
 
-
-
 .status {
   display: flex;
   align-items: center;
@@ -130,6 +130,12 @@ strong {
   width: 56px;
   height: 56px;
   margin-bottom: 5px;
+  cursor: pointer;
+  
+
+  background-image: linear-gradient(to right top, #fed56d, #ffa458, #ff6b67, #ff258e, #d400c1);
+  border-radius: 100px;
+  padding: 2px;
 }
 .proximos-status {
   width: 26px;
@@ -139,8 +145,8 @@ strong {
   position: absolute;
   top: 40px;
   right: 5px;
-}
-.imagem-cortada {
+
+  cursor: pointer;
 }
 
 .posts {
@@ -171,6 +177,10 @@ strong {
 .publicador div {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.publicador ion-icon {
+  cursor: pointer;
 }
 .publicador img {
   width: 32px;
@@ -188,6 +198,9 @@ strong {
   color: #000000;
 }
 
+.ver-todos-comentarios-msg {
+  cursor: pointer;
+}
 .opcoes-post {
   display: flex;
   justify-content: space-between;
@@ -198,6 +211,8 @@ strong {
   width: 17.88px;
   height: 17.88px;
   margin-right: 5px;
+
+  cursor: pointer;
 }
 
 .curtido-por {
@@ -206,7 +221,6 @@ strong {
   margin-bottom: 5px;
   font-size: 14px;
 }
-
 .curtido-por img {
   width: 20px;
   height: 20px;
@@ -225,6 +239,7 @@ strong {
 .meu-perfil {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .meu-perfil img {
   width: 56px;
@@ -257,10 +272,12 @@ strong {
   font-weight: 500;
   font-size: 12px;
   color: #262626;
+  cursor: pointer;
 }
 
-.texto-cinza-claro {
+.mais-informacoes {
   color: #8e8e8e;
+  cursor: pointer;
 }
 
 .comentarios input {
@@ -280,6 +297,7 @@ strong {
 }
 .comentario .like {
   width: 30px;
+  cursor: pointer;
 }
 .comentar {
   display: flex;
@@ -306,6 +324,7 @@ strong {
 
 .usuario {
   display: flex;
+  cursor: pointer;
 }
 .sugestao {
   display: flex;
@@ -322,6 +341,7 @@ strong {
   font-weight: 500;
   font-size: 12px;
   color: #139ef2;
+  cursor: pointer;
 }
 .status-usuario {
   font-weight: 400;
