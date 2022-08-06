@@ -177,6 +177,10 @@ strong {
   margin-right: 14px;
 }
 
+.publicacao video {
+  width: 100%;
+}
+
 .rodape-post {
   padding: 8px 14px;
   font-weight: 300;
