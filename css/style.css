@@ -14,6 +14,11 @@ strong {
   font-weight: bold; /* não tava funcionando */
 }
 
+ion-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .cabecalho {
   background-color: #fff;
 
@@ -23,7 +28,7 @@ strong {
   width: 100%;
   z-index: 1;
 
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
 
 .menu {
@@ -59,31 +64,30 @@ strong {
   margin: 0 5px;
 }
 .logo ion-icon {
-  width: 22px;
-  height: 22px;
 }
 .logo img {
   width: 103px;
   height: 29px;
 }
 .opcoes-menu ion-icon {
-  width: 22px;
-  height: 22px;
   margin-right: 5px;
-  cursor: pointer;
 }
 
-.busca input {
+.busca > input {
   width: 215px;
   height: 28px;
-  text-align: center;
 
   background-color: #fafafa;
-  color: #979797;
+
   border: 1px solid #dbdbdb;
   border-radius: 3px;
+  padding: 0 5px;
 
   outline: 0;
+}
+.busca > input::placeholder {
+  color: #979797;
+  text-align: center;
 }
 
 .conteudo {
@@ -119,23 +123,29 @@ strong {
 
   overflow: hidden;
 }
-.status div {
+.status > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 10px;
 
-  margin-left: 17px;
+  cursor: pointer;
 }
-.status div img {
+.background-img {
+  display: flex;
+  justify-content: center;
+
+  background-image: url("../img/stories_background.jpg");
+  background-size: cover;
+
   width: 56px;
   height: 56px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  
-
-  background-image: linear-gradient(to right top, #fed56d, #ffa458, #ff6b67, #ff258e, #d400c1);
-  border-radius: 100px;
-  padding: 2px;
+  margin-bottom: 3px;
+}
+.background-img img {
+  width: 56px;
+  height: 56px;
+  padding: 4px;
 }
 .proximos-status {
   width: 26px;
@@ -180,7 +190,6 @@ strong {
   cursor: pointer;
 }
 .publicador ion-icon {
-  cursor: pointer;
 }
 .publicador img {
   width: 32px;
@@ -208,11 +217,7 @@ strong {
 }
 
 .opcoes-post div ion-icon {
-  width: 17.88px;
-  height: 17.88px;
   margin-right: 5px;
-
-  cursor: pointer;
 }
 
 .curtido-por {
@@ -301,7 +306,7 @@ strong {
 }
 .comentar {
   display: flex;
-  border-top: 1px solid #DBDBDB;
+  border-top: 1px solid #dbdbdb;
 }
 .comentar input {
   height: 50px;
@@ -309,16 +314,19 @@ strong {
   padding: 10px 0;
   outline: 0;
   font-size: 14px;
+  color: #000;
+}
+.comentar input::placeholder {
   color: #8e8e8e;
 }
 .comentar p {
-  color: #B2DFFC;
+  color: #b2dffc;
   font-weight: 500;
   line-height: 50px;
   cursor: pointer;
 }
 .comentar p:hover {
-  color: #0095F6;
+  color: #0095f6;
   transition: 300ms;
 }
 
@@ -362,7 +370,7 @@ strong {
   display: none;
 }
 
-@media(max-width: 935px) {
+@media (max-width: 935px) {
   .menu {
     width: 100%;
     padding: 0 10px;
@@ -379,7 +387,7 @@ strong {
   }
 }
 
-@media(max-width: 614px) {
+@media (max-width: 614px) {
   .menu {
     display: none;
   }
@@ -400,9 +408,7 @@ strong {
 
     padding: 10px;
   }
-  .menu-mobile ion-icon { 
-    width: 18px;
-    height: 18px;
+  .menu-mobile ion-icon {
   }
   .menu-mobile img {
     width: 103px;
@@ -418,7 +424,9 @@ strong {
     border: none;
   }
 
-  .post, .publicacao img, .status{
+  .post,
+  .publicacao img,
+  .status {
     width: 100%;
   }
 
@@ -447,9 +455,5 @@ strong {
     left: 0;
   }
   .footer-mobile ion-icon {
-    width: 18px;
-    height: 18px;
   }
-
-  
 }
